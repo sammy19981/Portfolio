@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.article, .date {
+    font-style: italic;
+    color: #885c8a;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f3b1e9;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"], button {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    header, main, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+/* Existing CSS ... */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    /* Existing styles... */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Header Styling */
+
+header {
+    background-color: #1a1a1a; /* Dark background for a tech feel */
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    background-image: url('tech-background.jpg'); /* Optional: tech-themed background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the spacing between items */
+    margin-top: 10px;
+}
+
+.contact-info p, .contact-info a {
+    background-color: #333; /* Background for contrast */
+    color: #fff;
+    padding: 5px 10px; /* Padding for some space around text */
+    border-radius: 5px; /* Optional: for rounded corners */
+    text-decoration: none;
+    min-width: 150px; /* Ensures a minimum width for each item */
+    text-align: center;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Additional responsive adjustments if needed */
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
+
+
+.header-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent layer */
+    display: inline-block;
+    border-radius: 18px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00b4d8; /* Accent color border */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    margin: 10px 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+ul li:hover {
+    background-color: #d6e0f0; /* Change color on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+    transform: scale(1.05); /* Slightly increase size */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+button {
+    /* Existing styles... */
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+    transform: translateY(-2px); /* Slightly move up the button */
+}
+.header-content h1:hover, .header-content p:hover {
+    color: #00b4d8; /* Highlight color on hover */
+    cursor: pointer;
+}
+a {
+    color: #333;
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #00b4d8; /* Highlight color on hover */
+}
+.profile-image:hover {
+    border-color: #e73c7e; /* Change border color on hover */
+    transform: rotate(5deg); /* Slight rotation */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+    .header-content, .container, header, main, footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    ul li {
+        padding: 10px; /* Larger touch targets for mobile */
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Include this at the bottom to import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
